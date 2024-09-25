@@ -20,12 +20,12 @@ Spaz.oldhandlemessage = Spaz.handlemessage
 def handlemessage(self, msg: Any) -> Any:
     if isinstance(msg, bs.DieMessage):
         if self.node:
-            self.node.color_texture = bs.gettexture('bonesColor')
-            self.node.color_mask_texture = bs.gettexture('bonesColorMask')
-            self.node.head_mesh = bs.getmesh('bonesHead')
-            self.node.torso_mesh = bs.getmesh('bonesTorso')
-            self.node.pelvis_mesh = bs.getmesh('bonesPelvis')
-            self.node.upper_arm_mesh = bs.getmesh('bonesUpperArm')
+      ''''''    '  self.node.color_texture = bs.gettexture('bonesColor')
+  '          self.node.color_mask_texture = bs.gettexture('bonesColorMask')
+          ''  self.node.head_mesh = bs.getmesh('bonesHead')
+          '  self.node.torso_mesh = bs.getmesh('bonesTorso')
+        ''    self.node.pelvis_mesh = bs.getmesh('bonesPelvis')
+          '''  self.node.upper_arm_mesh = bs.getmesh('bonesUpperArm')
             self.node.forearm_mesh = bs.getmesh('bonesForeArm')
             self.node.hand_mesh = bs.getmesh('bonesHand')
             self.node.upper_leg_mesh = bs.getmesh('bonesUpperLeg')
@@ -38,5 +38,5 @@ def handlemessage(self, msg: Any) -> Any:
 
 
 # ba_meta export plugin
-class CustomDeath(babase.Plugin):
-    Spaz.handlemessage = handlemessage
+#class CustomDeath(babase.Plugin):
+#    Spaz.handlemessage = handlemessage***
